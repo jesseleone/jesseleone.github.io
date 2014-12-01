@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 html,
@@ -11,6 +15,18 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
+}
+
+body {
+    background: #3C3930 !important;
+    color: #69606b;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: 'Open Sans', 'Raleway', Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -49,6 +65,21 @@ textarea {
     resize: vertical;
 }
 
+a {
+    outline: none;
+    color: #cf4a5c;
+    text-decoration: none !important;
+}
+
+a:hover, a:focus {
+    color: #69606b;
+}
+
+a,
+a:visited {
+    text-decoration: underline;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -56,227 +87,36 @@ textarea {
     padding: 0.2em 0;
 }
 
-
 /* ==========================================================================
-   Page styles
+   Content Styles
    ========================================================================== */
 
-#siteContainer {
-    height: 100%;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#centerContainer {
-    width: 100%;
-    max-width: 1280px;
-}
-
-.subContainer {
-    width: 100%;
-    float: left;
-}
-
-#containerOne {
-    background: url('/img/bg_lightsRain.png');
-    height:700px;
-    position: relative;
-    z-index: 1;
-}
-
-#containerOne .overlayContainer {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: url('/img/txtr_squares.png');
-    background-repeat: repeat;
-    z-index: 10;
-}
-
-#siteNav {
-    display: block;
-    position: absolute;
-    width: 100%;
-    list-style: none;
-    z-index: 100;
-    padding: 0px !important;
-}
-
-#siteNav li {
-    display: inline;
-    z-index: 100;
-}
-
-#siteNav a {
-    z-index: 100 !important;
-    color: #c4c4c4;
-    margin: 30px 20px;
-    cursor: pointer;
-    font-size: 15pt;
+.quote {
+    line-height: 1;
+    color: #fff;
+    padding: 0 0 0.6em !important;
     font-weight: 300;
-}
-
-#siteNav a:hover {
-    z-index: 100 !important;
-    color: #ffffff;
-    margin: 30px 20px;
-    cursor: pointer;
-    font-size: 15pt;
-    font-weight: 300;
-}
-
-.headerOne {
-    font-size: 40pt;
-    font-weight: 300; 
-    color: #ffffff;
-    z-index: 100;
-    -webkit-font-smoothing:antialiased !important;
-}
-
-.headerTwo {
-    font-size: 30pt;
-    font-weight: 300; 
-    color: #ffffff;
-    z-index: 100;
-    -webkit-font-smoothing:antialiased !important;
-}
-
-
-#containerOne .headerOne {
-    position: absolute;
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: 100px;
-    top: 300px;
-}
-
-.linkMore {
-    position: absolute;
-    bottom: 40px;
-    left: 0px;
-    width: 100%;
-    height: 45px;
-    background: url('/img/icon_downArrow.png') no-repeat;
-    background-position: center !important;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.linkMore:hover {
-    background: url('/img/icon_downArrowLight.png') no-repeat !important;
-    background-position: center !important;
-    width: 100%;
-}
-
-#containerTwo {
-    background: url('/img/txtr_geo.png');
-    height:auto;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-
-
-#containerThree {
-    background: url('/img/bg_cityBlur.jpg');
-    height:700px;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-
-#containerThree .overlayContainer {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: url('/img/txtr_squares.png');
-    background-repeat: repeat;
-    z-index: 10;
-}
-
-#containerThree .headerTwo {
-    position: absolute;
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: 300px;
-    top: 290px;
-}
-
-#meContainer {
-    width: 100%;
-    height: 150px;
-    margin-top: 90px;
-    position: absolute;
-    z-index: 100;
+    margin: 0 auto !important;
+    font-size: 1.75em;
 
 }
 
-#containerFour {
-    background: url('/img/txtr_geo.png');
-    height:700px;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    padding-top: 40px;
+.quoteBy {
+    color: #fff;
+    font-size: 0.85em;
 }
 
-#containerFour .headerTwo {
-    color: #6d6d6d;
-}
 
-#containerFive {
-    background: url('/img/bg_mountainBlur.png');
-    height:700px;
-    position: relative;
-    z-index: 1;
-    padding-top: 40px;
-}
 
-#containerFive .overlayContainer {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: url('/img/txtr_squares.png');
-    background-repeat: repeat;
-    z-index: 10;
-    top: 0px;
-    left: 0px;
-}
 
-.contentContainer {
-    width: 100%;
-    height: 500px;
-}
 
-#containerFive .headerTwo {
-    position: absolute;
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: 300px;
-    color: #ffffff;
-    z-index: 100;
-}
 
-#backToTop {
-    color: #e8e8e8;
-    z-index: 100;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 20px;
-}
 
-#backToTop a {
-    padding: 10px 50px;
-    border: 1px solid #6d6d6d;
-    cursor: pointer;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    border-radius: 7px;
-}
+
+
+
+
+
 
 /* ==========================================================================
    Media Queries
@@ -367,10 +207,7 @@ textarea {
         text-shadow: none !important;
     }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+    
 
     a[href]:after {
         content: " (" attr(href) ")";
